@@ -38,7 +38,7 @@ export default function Home() {
             </p>
             <h1 className="type-hero mt-6">
               Red Snapper
-              <span className="block font-medium text-sunset italic">&amp; Coffee Beans</span>
+              <span className="block font-semibold text-sunset italic">&amp; Coffee Beans</span>
             </h1>
             <p className="type-lede mt-7 max-w-xl text-white/90">
               {site.tagline[0]}
@@ -97,9 +97,9 @@ export default function Home() {
               <div
                 data-reveal="image"
                 style={{ ["--reveal-delay" as string]: "200ms" }}
-                className="absolute -bottom-10 -left-6 w-[46%] rounded-[var(--radius-lg)] ring-8 ring-surface sm:-left-12 lg:-left-24"
+                className="absolute -bottom-10 -left-6 w-[46%] rounded-full ring-8 ring-surface sm:-left-12 lg:-left-24"
               >
-                <Photo id="intro-coffee-by-the-sea" className="aspect-square rounded-[var(--radius-lg)]" caption={false} />
+                <Photo id="intro-coffee-by-the-sea" className="aspect-square rounded-full" caption={false} />
               </div>
             </div>
           </div>

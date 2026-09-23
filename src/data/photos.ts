@@ -27,7 +27,7 @@ const slots = {
   "hero-rooftop-sunset": { tone: "sunset", motif: "horizon", alt: "The terrace: blue beams, a tropical leaf mural and the Red Snapper & Coffee Beans sign", brief: "Rooftop at golden hour, sea and sky visible, calm space for headline in the lower third" },
   "intro-terrace-greenery": { tone: "palm", motif: "table", alt: "The café indoors: copper lamps, palms and daylight", brief: "Ground-floor terrace with greenery and colourful décor, morning light" },
   "intro-coffee-by-the-sea": { tone: "lagoon", motif: "cup", alt: "A latte with leaf art", brief: "Cappuccino close-up, sea softly out of focus" },
-  "story-the-catch": { tone: "snapper", motif: "fish", alt: "Whole grilled red snapper with lemon, tomatoes and herbs", brief: "Red snapper steak, 45°, plain plate, natural light" },
+  "story-the-catch": { tone: "snapper", motif: "fish", alt: "Grilled red snapper steak with mashed potato, broccoli and roast vegetables", brief: "Red snapper steak, 45°, plain plate, natural light" },
   "story-the-cup": { tone: "espresso", motif: "cup", alt: "A latte with leaf art, from above", brief: "Espresso pour at the bar, close" },
   "story-the-view": { tone: "lagoon", motif: "horizon", alt: "The sea from the rooftop terrace", brief: "The beach across the road, lagoon colours" },
   "story-team": { tone: "sand", motif: "people", alt: "Our team at the pass, smiling", brief: "Staff candid at the pass or coffee bar" },
@@ -42,14 +42,14 @@ const slots = {
   "cat-pasta": { tone: "sand", motif: "plate", alt: "Baked pasta with garlic bread, from above", brief: "Pasta bowl, top-down" },
   "cat-pizza": { tone: "snapper", motif: "plate", alt: "Tuna pizza with chilli, basil and fresh coconut", brief: "Whole pizza, top-down" },
   "cat-burgers": { tone: "sand", motif: "plate", alt: "A burger with fried egg and fries on a wooden board", brief: "Burger with fries, 45°" },
-  "cat-desserts": { tone: "espresso", motif: "plate", alt: "Brownies and cakes on the dessert stand", brief: "Lava cake cut open" },
+  "cat-desserts": { tone: "espresso", motif: "plate", alt: "Chocolate lava cake with vanilla ice cream and strawberry", brief: "Lava cake cut open" },
   "cat-juices": { tone: "sunset", motif: "glass", alt: "Fresh watermelon juice on the terrace", brief: "Juices on the terrace, sea behind" },
-  "cat-mocktails": { tone: "lagoon", motif: "glass", alt: "Evening drinks with a view of the sea", brief: "Mocktail, sunset light" },
+  "cat-mocktails": { tone: "lagoon", motif: "glass", alt: "Passion fruit cooler with mint and ice", brief: "Mocktail, sunset light" },
   "cat-smoothies": { tone: "sunset", motif: "glass", alt: "A chilled fruit drink with a watermelon slice", brief: "Smoothies & shakes, side-on" },
 
   // Signatures
-  "sig-red-snapper": { tone: "snapper", motif: "fish", alt: "Whole grilled red snapper with lemon, tomatoes and herbs", brief: "Hero dish — plated red snapper, 45°" },
-  "sig-tuna-steak": { tone: "espresso", motif: "plate", alt: "Seared tuna steak over creamy mashed potatoes", brief: "Tuna steak sliced, pink centre visible" },
+  "sig-red-snapper": { tone: "snapper", motif: "fish", alt: "Grilled red snapper steak with mashed potato, broccoli and roast vegetables", brief: "Hero dish — plated red snapper, 45°" },
+  "sig-tuna-steak": { tone: "espresso", motif: "plate", alt: "Seared tuna steak, pink in the middle, over creamy mashed potatoes", brief: "Tuna steak sliced, pink centre visible" },
   "sig-salmon-steak": { tone: "sunset", motif: "plate", alt: "Pan-seared salmon with mango salsa, cream sauce, mash and vegetables", brief: "Salmon steak, crisp skin" },
   "sig-seafood-platter": { tone: "lagoon", motif: "plate", alt: "Seafood pan with prawns, mussels, clams, squid and garlic bread", brief: "Seafood platter, top-down, shared table" },
 
@@ -64,7 +64,7 @@ const slots = {
   "breakfast-terrace-morning": { tone: "lagoon", motif: "table", alt: "The breakfast counter by the garden windows", brief: "Terrace breakfast table, morning, sea visible" },
 
   // Rooftop
-  "rooftop-golden-hour": { tone: "sunset", motif: "horizon", alt: "Rooftop tables among the plants, looking out to sea", brief: "Rooftop wide, golden hour" },
+  "rooftop-golden-hour": { tone: "sunset", motif: "horizon", alt: "Rooftop tables under rattan lamps, looking out over the sea", brief: "Rooftop wide, golden hour" },
   "rooftop-plane-approach": { tone: "sunset", motif: "plane", alt: "A plane on approach to Velana International Airport, seen from the rooftop", brief: "Plane on approach over the sea at dusk" },
   "rooftop-evening": { tone: "night", motif: "table", alt: "Evening lights among the plants", brief: "Rooftop after dark, warm lights" },
 
