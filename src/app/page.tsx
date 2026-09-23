@@ -96,11 +96,11 @@ export default function Home() {
                 <Photo id="intro-terrace-greenery" className="aspect-[4/5] rounded-[var(--radius-lg)]" />
               </div>
               <div
-                data-reveal="image"
+                data-reveal
                 style={{ ["--reveal-delay" as string]: "200ms" }}
-                className="absolute -bottom-8 left-3 w-[42%] rounded-full ring-[6px] ring-surface sm:-bottom-10 sm:-left-12 sm:w-[46%] sm:ring-8 lg:-left-24"
+                className="absolute -bottom-8 left-3 w-[42%] rounded-full shadow-[0_14px_36px_-8px_rgba(46,29,22,0.45)] sm:-bottom-10 sm:-left-12 sm:w-[46%] lg:-left-24"
               >
-                <Photo id="intro-coffee-by-the-sea" className="aspect-square rounded-full" caption={false} />
+                <Photo id="intro-coffee-by-the-sea" className="aspect-square rounded-full bg-transparent!" caption={false} />
               </div>
             </div>
           </div>
