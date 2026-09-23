@@ -126,8 +126,8 @@ export function BreakfastSection() {
                 </p>
               </div>
               <div className="mt-10 grid grid-cols-5 gap-4" data-reveal="image">
-                <Photo id="breakfast-maldivian" className="col-span-3 aspect-[4/5] rounded-[var(--radius-lg)]" />
-                <Photo id="breakfast-terrace-morning" className="col-span-2 mt-12 aspect-[3/5] rounded-[var(--radius-lg)]" />
+                <Photo id="breakfast-eggs-benedict" className="col-span-3 aspect-[4/5] rounded-[var(--radius-lg)]" />
+                <Photo id="cat-breakfast" className="col-span-2 mt-12 aspect-[3/5] rounded-[var(--radius-lg)]" />
               </div>
             </div>
           </div>

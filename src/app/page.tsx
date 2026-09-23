@@ -29,7 +29,7 @@ export default function Home() {
       {/* 1 — HERO */}
       <section className="on-dark relative isolate flex min-h-[100svh] items-end overflow-hidden bg-ink text-white">
         <Photo id="hero-rooftop-sunset" priority className="absolute! inset-0 -z-10 h-full w-full" imgClassName="hero-zoom" captionAt="tr" />
-        <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-t from-ink/85 via-ink/30 to-ink/35" />
+        <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-t from-ink/90 via-ink/50 to-ink/35 md:via-ink/30" />
         <Container className="pt-40 pb-24 md:pb-28">
           <div className="hero-in max-w-4xl">
             <p className="type-label flex items-center gap-3 text-sand">

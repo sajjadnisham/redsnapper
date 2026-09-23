@@ -118,8 +118,12 @@ export type GalleryCategory = (typeof galleryCategories)[number];
 export type GalleryItem = { photo: PhotoId; category: GalleryCategory; size: "tall" | "wide" | "square" | "large" };
 
 export const gallery: GalleryItem[] = [
+  { photo: "rooftop-golden-hour", category: "Rooftop", size: "large" },
+  { photo: "sig-salmon-steak", category: "Food", size: "tall" },
+  { photo: "breakfast-eggs-benedict", category: "Food", size: "tall" },
+  { photo: "moment-day", category: "Food", size: "tall" },
+  { photo: "cat-breakfast", category: "Food", size: "square" },
   { photo: "sig-red-snapper", category: "Food", size: "large" },
-  { photo: "rooftop-golden-hour", category: "Rooftop", size: "tall" },
   { photo: "coffee-cappuccino", category: "Coffee", size: "square" },
   { photo: "gallery-interior-colour", category: "Interiors", size: "wide" },
   { photo: "cat-sushi", category: "Food", size: "square" },
@@ -148,13 +152,13 @@ export type SocialTile =
   | { kind: "type"; text: string; tone: "snapper" | "coffee" | "lagoon" };
 
 export const socialTiles: SocialTile[] = [
-  { kind: "photo", photo: "sig-tuna-steak", caption: "Tuna steak, seared to order, over creamy mash." },
-  { kind: "photo", photo: "intro-terrace-greenery", caption: "Morning on the terrace." },
+  { kind: "photo", photo: "sig-salmon-steak", caption: "Pan-seared salmon, mango salsa, cream sauce." },
+  { kind: "photo", photo: "rooftop-golden-hour", caption: "Plants, tables and the open sea." },
   { kind: "type", text: "The catch, the cup, the view.", tone: "snapper" },
   { kind: "photo", photo: "gallery-guests-family", caption: "Sunday lunch, all together." },
   { kind: "photo", photo: "rooftop-plane-approach", caption: "Rooftop from 5 PM. Planes on approach, free of charge." },
-  { kind: "photo", photo: "coffee-cappuccino", caption: "Slow down for coffee." },
+  { kind: "photo", photo: "breakfast-eggs-benedict", caption: "Salmon egg benedict. Start the day by the sea." },
   { kind: "type", text: "Nasi goreng. The ultimate comfort food.", tone: "coffee" },
-  { kind: "photo", photo: "cat-juices", caption: "Daily dose of wellness in a glass." },
+  { kind: "photo", photo: "moment-day", caption: "Lunch, sorted." },
   { kind: "type", text: "Evening tea with a view.", tone: "lagoon" },
 ];
