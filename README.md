@@ -27,4 +27,16 @@ npm run build   # static site in /out
 - Confirm opening hours (Google vs Tripadvisor vs printed menu differ).
 - Supply real photography (see `src/data/photos.ts` for the shot list).
 
-Deploys to GitHub Pages via `.github/workflows/deploy.yml`.
+Deploys to GitHub Pages via `.github/workflows/deploy.yml` on every push.
+
+## Custom domain: redsnappercoffeebeans.com
+1. GitHub → repo Settings → Pages → Custom domain: `redsnappercoffeebeans.com` → Save.
+2. At the domain's DNS provider:
+   - `A` records for `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - `AAAA` records for `@`: `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
+   - `CNAME` for `www`: `sajjadnisham.github.io`
+   - Leave `MX`/email records untouched.
+3. After DNS resolves (minutes to 24h), tick **Enforce HTTPS** in Settings → Pages.
+4. Re-run the deploy so the site builds without the `/redsnapper` sub-path.
+
+`public/CNAME` holds the domain; the build's base path comes from GitHub automatically.
