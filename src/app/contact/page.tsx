@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <PageHero photo="gallery-staff-bar" eyebrow="Contact" title="Say hello."
+      <PageHero photo="gallery-interior-ac" eyebrow="Contact" title="Say hello."
         lede={`Tables, delivery, takeaway or a birthday on the rooftop. ${contact.bookingLine}`}>
         <Button href={`tel:${contact.phones[0].tel}`} variant="primary" icon="none">Call {contact.phones[0].display}</Button>
         <Button href={links.directions} variant="outline-light" icon="external">Get directions</Button>

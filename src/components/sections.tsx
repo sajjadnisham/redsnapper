@@ -4,6 +4,7 @@ import { breakfastFeature, coffeeList, moments, signatures, socialTiles, type Si
 import { findItem, formatPrice } from "@/data/menu";
 import { addressLines, contact, facilities, links, rooftop, site, social } from "@/data/site";
 import { Photo } from "./Photo";
+import { hasPhoto } from "@/lib/photos";
 import { Button, Container, Eyebrow, ScaleStrip } from "./ui";
 import { HoursTable, OpenStatus } from "./Hours";
 import { InstagramIcon, FacebookIcon, WhatsAppIcon, Ornament } from "./icons";
@@ -101,10 +102,10 @@ export function CoffeeSection() {
               <Photo id="coffee-cappuccino" className="aspect-[16/10] rounded-[var(--radius-lg)]" />
             </div>
             <div data-reveal="image">
-              <Photo id="coffee-cold-brew" className="aspect-[3/4] rounded-[var(--radius-lg)]" />
+              <Photo id="gallery-interior-colour" className="aspect-[3/4] rounded-[var(--radius-lg)]" />
             </div>
             <div data-reveal="image" style={{ ["--reveal-delay" as string]: "150ms" }} className="mt-10">
-              <Photo id="coffee-matcha" className="aspect-[3/4] rounded-[var(--radius-lg)]" />
+              <Photo id="gallery-greenery" className="aspect-[3/4] rounded-[var(--radius-lg)]" />
             </div>
           </div>
         </div>
@@ -292,7 +293,7 @@ export function SocialGrid() {
           </div>
         </div>
         <ul className="no-scrollbar -mx-5 mt-12 flex snap-x gap-3 overflow-x-auto px-5 sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:overflow-visible sm:px-0">
-          {socialTiles.map((t, i) => (
+          {socialTiles.filter((t) => t.kind === "type" || hasPhoto(t.photo)).map((t, i) => (
             <li key={i} className="w-[70%] shrink-0 snap-start sm:w-auto" data-reveal style={{ ["--reveal-delay" as string]: `${(i % 3) * 90}ms` }}>
               <a
                 href={social.instagram.href}

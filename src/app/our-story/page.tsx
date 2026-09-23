@@ -118,7 +118,7 @@ export default function StoryPage() {
               </div>
             </div>
             <div className="md:col-span-6 md:col-start-7" data-reveal="image">
-              <Photo id="story-team" className="aspect-[4/3] rounded-[var(--radius-lg)]" />
+              <Photo id="gallery-interior-ac" className="aspect-[4/3] rounded-[var(--radius-lg)]" />
             </div>
           </div>
 

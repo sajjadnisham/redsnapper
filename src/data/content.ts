@@ -134,6 +134,8 @@ export const gallery: GalleryItem[] = [
   { photo: "coffee-cappuccino", category: "Coffee", size: "square" },
   { photo: "gallery-interior-colour", category: "Interiors", size: "tall" },
   { photo: "cat-sushi", category: "Food", size: "square" },
+  { photo: "cat-pizza", category: "Food", size: "wide" },
+  { photo: "cat-salads", category: "Food", size: "square" },
   { photo: "gallery-beach-morning", category: "Beach", size: "tall" },
   { photo: "gallery-staff-bar", category: "People", size: "square" },
   { photo: "breakfast-maldivian", category: "Food", size: "wide" },

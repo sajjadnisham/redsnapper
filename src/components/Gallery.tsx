@@ -5,6 +5,10 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { gallery, galleryCategories, type GalleryCategory } from "@/data/content";
 import { photos } from "@/data/photos";
 import { Photo } from "./Photo";
+import { hasPhoto } from "@/lib/photos";
+
+const shown = gallery.filter((g) => hasPhoto(g.photo));
+const categories = galleryCategories.filter((c) => shown.some((g) => g.category === c));
 
 const spans = {
   large: "col-span-2 row-span-2",
@@ -17,13 +21,13 @@ const spans = {
 export function Gallery({ limit }: { limit?: number }) {
   const [filter, setFilter] = useState<GalleryCategory | "All">("All");
   const [index, setIndex] = useState<number | null>(null);
-  const items = (filter === "All" ? gallery : gallery.filter((g) => g.category === filter)).slice(0, limit);
+  const items = (filter === "All" ? shown : shown.filter((g) => g.category === filter)).slice(0, limit);
 
   return (
     <div>
       {!limit && (
         <div className="no-scrollbar -mx-5 mb-10 flex gap-2 overflow-x-auto px-5 sm:mx-0 sm:flex-wrap sm:px-0" role="group" aria-label="Filter gallery">
-          {(["All", ...galleryCategories] as const).map((c) => (
+          {(["All", ...categories] as const).map((c) => (
             <button
               key={c}
               type="button"

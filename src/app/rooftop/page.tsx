@@ -47,7 +47,7 @@ export default function RooftopPage() {
             </ul>
           </div>
           <div className="mt-20 grid gap-4 sm:grid-cols-2">
-            <div data-reveal="image"><Photo id="rooftop-plane-approach" className="aspect-[4/3] rounded-[var(--radius-lg)]" /></div>
+            <div data-reveal="image"><Photo id="moment-sunset" className="aspect-[4/3] rounded-[var(--radius-lg)]" /></div>
             <div data-reveal="image"><Photo id="rooftop-evening" className="aspect-[4/3] rounded-[var(--radius-lg)]" /></div>
           </div>
         </Container>
