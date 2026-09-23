@@ -30,7 +30,7 @@ export function Wordmark({ className = "", light = false }: { className?: string
       <span className="text-[1.3rem] font-semibold tracking-[-0.01em] sm:text-[1.45rem]">
         Red Snapper <span className={`font-medium italic ${light ? "text-sunset" : "text-snapper"}`}>&amp;</span>
       </span>
-      <span className="mt-1 font-sans text-[0.62rem] font-semibold uppercase tracking-[0.34em] opacity-80">Coffee Beans</span>
+      <span className="mt-1 font-sans text-[0.7rem] font-semibold uppercase tracking-[0.34em] opacity-80">Coffee Beans</span>
     </span>
   );
 }

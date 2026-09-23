@@ -63,7 +63,7 @@ export default function Home() {
           className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-3 text-white/75 hover:text-white md:flex"
           aria-label="Scroll to introduction"
         >
-          <span className="type-label text-[0.65rem]">Scroll</span>
+          <span className="type-label text-[0.7rem]">Scroll</span>
           <span className="relative h-12 w-px overflow-hidden bg-white/25">
             <span className="scroll-cue absolute inset-0 bg-white" />
           </span>

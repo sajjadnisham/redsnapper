@@ -137,7 +137,7 @@ function Category({ category: c }: { category: MenuCategory }) {
     <section
       id={c.id}
       aria-labelledby={`${c.id}-title`}
-      className={`scroll-mt-[140px] ${dark ? "on-dark my-10 bg-coffee py-16 text-surface md:py-20" : "py-12 md:py-16"}`}
+      className={`scroll-mt-[36px] ${dark ? "on-dark my-10 bg-coffee py-16 text-surface md:py-20" : "py-12 md:py-16"}`}
     >
       {dark && <div aria-hidden className="pattern-sand -mt-16 mb-12 h-8 md:-mt-20" />}
       <div className="mx-auto max-w-[1320px] px-5 sm:px-8 lg:px-12">
@@ -189,11 +189,11 @@ function Item({ item, dark }: { item: MenuItem; dark: boolean }) {
         <div className="mt-2 flex flex-wrap gap-1.5">
           {item.tags.map((t) =>
             t === "chefs-pick" ? (
-              <span key={t} className="type-label rounded-full bg-snapper-soft px-2.5 py-1 text-[0.65rem] text-snapper-deep">
+              <span key={t} className="type-label rounded-full bg-snapper-soft px-2.5 py-1 text-[0.7rem] text-snapper-deep">
                 Chef&rsquo;s pick
               </span>
             ) : (
-              <span key={t} className={`type-label inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[0.65rem] ${dark ? "bg-surface/10" : "bg-[#E3ECDD] text-palm"}`}>
+              <span key={t} className={`type-label inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[0.7rem] ${dark ? "bg-surface/10" : "bg-[#E3ECDD] text-palm"}`}>
                 <Leaf aria-hidden className="size-3" strokeWidth={2} />
                 {t === "vegan" ? "Vegan" : "Vegetarian"}
               </span>

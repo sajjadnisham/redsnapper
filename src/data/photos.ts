@@ -41,7 +41,7 @@ const slots = {
   "cat-grills": { tone: "espresso", motif: "plate", alt: "Chicken in mushroom sauce with creamy mash and vegetables", brief: "Grill plate, 45°" },
   "cat-pasta": { tone: "sand", motif: "plate", alt: "Baked pasta with garlic bread, from above", brief: "Pasta bowl, top-down" },
   "cat-pizza": { tone: "snapper", motif: "plate", alt: "Maldivian-style pizza fresh from the oven", brief: "Whole pizza, top-down" },
-  "cat-burgers": { tone: "sand", motif: "plate", alt: "Chicken burger with fries and salad", brief: "Burger with fries, 45°" },
+  "cat-burgers": { tone: "sand", motif: "plate", alt: "A burger with fried egg and fries on a wooden board", brief: "Burger with fries, 45°" },
   "cat-desserts": { tone: "espresso", motif: "plate", alt: "Chocolate lava cake with vanilla ice cream", brief: "Lava cake cut open" },
   "cat-juices": { tone: "sunset", motif: "glass", alt: "Fresh mango and watermelon juices", brief: "Juices on the terrace, sea behind" },
   "cat-mocktails": { tone: "lagoon", motif: "glass", alt: "A mint mocktail on the rooftop", brief: "Mocktail, sunset light" },
@@ -61,7 +61,7 @@ const slots = {
   // Breakfast
   "breakfast-maldivian": { tone: "sand", motif: "plate", alt: "Maldivian breakfast of mashuni, roshi and kulhimas", brief: "Maldivian breakfast, top-down" },
   "breakfast-eggs-benedict": { tone: "sand", motif: "plate", alt: "Salmon egg benedict with hollandaise and crispy chicken bacon", brief: "Eggs benedict, 45°" },
-  "breakfast-terrace-morning": { tone: "lagoon", motif: "table", alt: "Breakfast on the terrace in morning light", brief: "Terrace breakfast table, morning, sea visible" },
+  "breakfast-terrace-morning": { tone: "lagoon", motif: "table", alt: "The breakfast counter by the garden windows", brief: "Terrace breakfast table, morning, sea visible" },
 
   // Rooftop
   "rooftop-golden-hour": { tone: "sunset", motif: "horizon", alt: "Rooftop tables among the plants, looking out to sea", brief: "Rooftop wide, golden hour" },
@@ -69,7 +69,7 @@ const slots = {
   "rooftop-evening": { tone: "night", motif: "table", alt: "The rooftop lit in the evening", brief: "Rooftop after dark, warm lights" },
 
   // Moments
-  "moment-morning": { tone: "sand", motif: "cup", alt: "Morning coffee and breakfast", brief: "Morning table" },
+  "moment-morning": { tone: "sand", motif: "cup", alt: "The breakfast spread: pastries, fruit, bakes and hot dishes", brief: "Morning table" },
   "moment-day": { tone: "palm", motif: "leaf", alt: "A chicken rice bowl with soft-boiled eggs at lunch", brief: "Lunch, daylight, greenery" },
   "moment-sunset": { tone: "sunset", motif: "horizon", alt: "Sunset from the rooftop", brief: "Sunset from the rooftop" },
   "moment-evening": { tone: "night", motif: "people", alt: "The garden terrace lit up after dark", brief: "Evening, people sharing" },
@@ -78,10 +78,10 @@ const slots = {
   "location-exterior": { tone: "lagoon", motif: "horizon", alt: "The restaurant on Kaani Magu, facing the beach", brief: "Exterior from the beach side" },
 
   // Gallery extras
-  "gallery-interior-colour": { tone: "snapper", motif: "table", alt: "Colourful interior seating", brief: "Interior, colourful décor" },
+  "gallery-interior-colour": { tone: "snapper", motif: "table", alt: "Blue banquette under a rattan lamp, the Red Snapper & Coffee Beans sign and a leaf mural", brief: "Interior, colourful décor" },
   "gallery-interior-ac": { tone: "sand", motif: "table", alt: "Indoor tables under copper pendant lamps", brief: "Indoor tables" },
   "gallery-beach-morning": { tone: "lagoon", motif: "horizon", alt: "Hulhumalé Beach in the morning", brief: "Beach, morning light" },
-  "gallery-greenery": { tone: "palm", motif: "leaf", alt: "Plants, lights and the stairs up from the garden terrace at night", brief: "Greenery detail" },
+  "gallery-greenery": { tone: "palm", motif: "leaf", alt: "A living wall of plants beside the terrace tables", brief: "Greenery detail" },
   "gallery-guests-family": { tone: "sand", motif: "people", alt: "A family at lunch", brief: "Family table, candid" },
   "gallery-staff-bar": { tone: "espresso", motif: "people", alt: "Barista at work", brief: "Barista, candid" },
   "gallery-moment-birthday": { tone: "snapper", motif: "people", alt: "A celebration at the table", brief: "Celebration, candid" },

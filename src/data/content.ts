@@ -19,7 +19,8 @@ export const foodCategories: FoodCategory[] = [
   { title: "Smoothies & Shakes", blurb: "Peanut butter banana, berry blast, Oreo.", photo: "cat-smoothies", menuId: "smoothies-shakes" },
 ];
 
-export type Signature = { name: string; label?: string; description: string; photo: PhotoId };
+/** `menuItem` links a signature to its menu entry for the price; none = "Market price". */
+export type Signature = { name: string; label?: string; description: string; photo: PhotoId; menuItem?: string };
 
 export const signatures: Signature[] = [
   {
@@ -27,14 +28,16 @@ export const signatures: Signature[] = [
     label: "Chef's pick",
     description: "Grilled or pan-fried red snapper served with potatoes, broccoli and cream sauce.",
     photo: "sig-red-snapper",
+    menuItem: "Grilled Red Snapper",
   },
   { name: "Tuna Steak", description: "Sear-to-order tuna served with creamy mashed potatoes.", photo: "sig-tuna-steak" },
   {
     name: "Salmon Steak",
     description: "Pan-seared salmon served as one of the restaurant's signature seafood choices.",
     photo: "sig-salmon-steak",
+    menuItem: "Salmon Steak",
   },
-  { name: "Seafood Platter", description: "A generous selection of seafood served with accompanying sides.", photo: "sig-seafood-platter" },
+  { name: "Seafood Platter", description: "A generous selection of seafood served with accompanying sides.", photo: "sig-seafood-platter", menuItem: "Sicilian Seafood Platter" },
 ];
 
 export const coffeeList = [
@@ -129,24 +132,25 @@ export const gallery: GalleryItem[] = [
   { photo: "cat-pasta", category: "Food", size: "tall" },
   { photo: "sig-red-snapper", category: "Food", size: "large" },
   { photo: "coffee-cappuccino", category: "Coffee", size: "square" },
-  { photo: "gallery-interior-colour", category: "Interiors", size: "wide" },
+  { photo: "gallery-interior-colour", category: "Interiors", size: "tall" },
   { photo: "cat-sushi", category: "Food", size: "square" },
   { photo: "gallery-beach-morning", category: "Beach", size: "tall" },
   { photo: "gallery-staff-bar", category: "People", size: "square" },
   { photo: "breakfast-maldivian", category: "Food", size: "wide" },
   { photo: "rooftop-plane-approach", category: "Rooftop", size: "large" },
   { photo: "coffee-cold-brew", category: "Coffee", size: "tall" },
-  { photo: "gallery-greenery", category: "Interiors", size: "square" },
+  { photo: "gallery-greenery", category: "Interiors", size: "tall" },
   { photo: "gallery-guests-family", category: "People", size: "wide" },
   { photo: "sig-seafood-platter", category: "Food", size: "square" },
   { photo: "moment-sunset", category: "Moments", size: "tall" },
+  { photo: "moment-morning", category: "Food", size: "wide" },
+  { photo: "cat-burgers", category: "Food", size: "tall" },
   { photo: "coffee-matcha", category: "Coffee", size: "square" },
   { photo: "story-the-view", category: "Beach", size: "wide" },
   { photo: "gallery-moment-birthday", category: "Moments", size: "square" },
   { photo: "rooftop-evening", category: "Rooftop", size: "wide" },
   { photo: "gallery-sushi-detail", category: "Food", size: "tall" },
   { photo: "story-team", category: "People", size: "square" },
-  { photo: "moment-morning", category: "Moments", size: "square" },
 ];
 
 /** Instagram-style grid: alternates food / venue / people / type / rooftop / coffee. */
@@ -159,7 +163,7 @@ export const socialTiles: SocialTile[] = [
   { kind: "photo", photo: "rooftop-golden-hour", caption: "Plants, tables and the open sea." },
   { kind: "type", text: "The catch, the cup, the view.", tone: "snapper" },
   { kind: "photo", photo: "gallery-interior-ac", caption: "Copper lamps, palms and a table by the window." },
-  { kind: "photo", photo: "rooftop-plane-approach", caption: "Rooftop from 5 PM. Planes on approach, free of charge." },
+  { kind: "photo", photo: "gallery-interior-colour", caption: "Take a seat. Since 2020." },
   { kind: "photo", photo: "breakfast-eggs-benedict", caption: "Salmon egg benedict. Start the day by the sea." },
   { kind: "type", text: "Nasi goreng. The ultimate comfort food.", tone: "coffee" },
   { kind: "photo", photo: "moment-day", caption: "Lunch, sorted." },

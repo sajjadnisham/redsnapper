@@ -49,7 +49,7 @@ export function Gallery({ limit }: { limit?: number }) {
               aria-label={`Open photo: ${photos[g.photo].alt}`}
             >
               <Photo id={g.photo} className="h-full w-full" caption={false} imgClassName="transition-transform duration-[1.1s] ease-out group-hover:scale-105" />
-              <span className="type-label absolute top-3 left-3 rounded-full bg-surface/90 px-2.5 py-1 text-[0.65rem] text-ink opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">
+              <span className="type-label absolute top-3 left-3 rounded-full bg-surface/90 px-2.5 py-1 text-[0.7rem] text-ink opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">
                 {g.category}
               </span>
             </button>

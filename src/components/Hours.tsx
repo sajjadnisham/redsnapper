@@ -43,7 +43,7 @@ export function HoursTable({ dark = false }: { dark?: boolean }) {
             <dt className="flex items-center gap-2 font-semibold">
               {row.label}
               {isToday && (
-                <span className={`rounded-full px-2 py-0.5 text-[0.65rem] uppercase tracking-[0.12em] ${dark ? "bg-sunset text-ink" : "bg-lagoon text-white"}`}>
+                <span className={`rounded-full px-2 py-0.5 text-[0.7rem] uppercase tracking-[0.12em] ${dark ? "bg-sunset text-ink" : "bg-lagoon text-white"}`}>
                   Today
                 </span>
               )}

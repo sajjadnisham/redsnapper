@@ -8,7 +8,7 @@
  *  - Prices are MVR, before 10% service charge and 8% GST.
  *  - Never guess a price. If a price is unknown or conflicting, set
  *    `price: null` and explain in `verify`. The site then shows
- *    "Ask our team" instead of a number.
+ *    "Market price" instead of a number.
  *  - `verify` is an internal note for the team; it is never shown to guests.
  */
 
@@ -485,4 +485,4 @@ export const menu: MenuCategory[] = [
 export const findItem = (name: string) =>
   menu.flatMap((c) => c.groups.flatMap((g) => g.items)).find((i) => i.name === name);
 
-export const formatPrice = (price: number | null) => (price == null ? "Ask our team" : `MVR ${price}`);
+export const formatPrice = (price: number | null) => (price == null ? "Market price" : `MVR ${price}`);

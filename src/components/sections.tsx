@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { Check, Mail, MapPin, Phone, Plane, Sunset } from "lucide-react";
-import { breakfastFeature, coffeeList, moments, signatures, socialTiles } from "@/data/content";
+import { breakfastFeature, coffeeList, moments, signatures, socialTiles, type Signature } from "@/data/content";
 import { findItem, formatPrice } from "@/data/menu";
 import { addressLines, contact, facilities, links, rooftop, site, social } from "@/data/site";
 import { Photo } from "./Photo";
 import { Button, Container, Eyebrow, ScaleStrip } from "./ui";
 import { HoursTable, OpenStatus } from "./Hours";
 import { InstagramIcon, FacebookIcon, WhatsAppIcon, Ornament } from "./icons";
+
+const signaturePrice = (s: Signature) => formatPrice(s.menuItem ? (findItem(s.menuItem)?.price ?? null) : null);
 
 /* ---------------- Signatures: "From the sea to the table." ---------------- */
 export function Signatures() {
@@ -36,6 +38,7 @@ export function Signatures() {
               <span className="type-label inline-flex w-fit rounded-full bg-snapper-soft px-3 py-1.5 text-snapper-deep">{hero.label}</span>
             )}
             <h3 className="type-title mt-5">{hero.name}</h3>
+            <p className="mt-3 text-lg font-semibold tabular-nums text-snapper">{signaturePrice(hero)}</p>
             <p className="type-lede mt-4 text-ink-muted">{hero.description}</p>
             <div className="mt-8">
               <Button href="/menu/#mains" variant="outline">
@@ -49,7 +52,10 @@ export function Signatures() {
           {rest.map((s, i) => (
             <article key={s.name} data-reveal style={{ ["--reveal-delay" as string]: `${i * 120}ms` }} className={i === 1 ? "lg:mt-16" : ""}>
               <Photo id={s.photo} className="aspect-[4/5] rounded-[var(--radius-lg)]" />
-              <h3 className="type-section mt-6">{s.name}</h3>
+              <div className="mt-6 flex items-baseline justify-between gap-4">
+                <h3 className="type-section">{s.name}</h3>
+                <span className="shrink-0 font-semibold tabular-nums">{signaturePrice(s)}</span>
+              </div>
               <p className="mt-2 text-ink-muted">{s.description}</p>
             </article>
           ))}
