@@ -25,7 +25,7 @@ export type PhotoSlot = {
 const slots = {
   // Hero & story
   "hero-rooftop-sunset": { tone: "sunset", motif: "horizon", alt: "The rooftop terrace with plants and tables, the sun over the sea", brief: "Rooftop at golden hour, sea and sky visible, calm space for headline in the lower third" },
-  "intro-terrace-greenery": { tone: "palm", motif: "table", alt: "Ground-floor terrace framed by greenery", brief: "Ground-floor terrace with greenery and colourful décor, morning light" },
+  "intro-terrace-greenery": { tone: "palm", motif: "table", alt: "The café indoors: copper lamps, palms and daylight", brief: "Ground-floor terrace with greenery and colourful décor, morning light" },
   "intro-coffee-by-the-sea": { tone: "lagoon", motif: "cup", alt: "A cappuccino on a table with the sea soft in the background", brief: "Cappuccino close-up, sea softly out of focus" },
   "story-the-catch": { tone: "snapper", motif: "fish", alt: "Red snapper plated with potatoes and broccoli", brief: "Red snapper steak, 45°, plain plate, natural light" },
   "story-the-cup": { tone: "espresso", motif: "cup", alt: "Espresso being poured at the coffee bar", brief: "Espresso pour at the bar, close" },
@@ -38,8 +38,8 @@ const slots = {
   "cat-salads": { tone: "palm", motif: "leaf", alt: "Watermelon feta salad with mint", brief: "Watermelon feta salad, top-down" },
   "cat-sushi": { tone: "night", motif: "plate", alt: "A board of sushi rolls", brief: "Sushi board, 45°" },
   "cat-seafood": { tone: "snapper", motif: "fish", alt: "Seafood platter ready to share", brief: "Seafood platter, top-down" },
-  "cat-grills": { tone: "espresso", motif: "plate", alt: "Grilled lamb chops with sides", brief: "Grill plate, 45°" },
-  "cat-pasta": { tone: "sand", motif: "plate", alt: "Creamy chicken and mushroom pasta", brief: "Pasta bowl, top-down" },
+  "cat-grills": { tone: "espresso", motif: "plate", alt: "Chicken in mushroom sauce with creamy mash and vegetables", brief: "Grill plate, 45°" },
+  "cat-pasta": { tone: "sand", motif: "plate", alt: "Baked pasta with garlic bread, from above", brief: "Pasta bowl, top-down" },
   "cat-pizza": { tone: "snapper", motif: "plate", alt: "Maldivian-style pizza fresh from the oven", brief: "Whole pizza, top-down" },
   "cat-burgers": { tone: "sand", motif: "plate", alt: "Chicken burger with fries and salad", brief: "Burger with fries, 45°" },
   "cat-desserts": { tone: "espresso", motif: "plate", alt: "Chocolate lava cake with vanilla ice cream", brief: "Lava cake cut open" },
@@ -72,19 +72,20 @@ const slots = {
   "moment-morning": { tone: "sand", motif: "cup", alt: "Morning coffee and breakfast", brief: "Morning table" },
   "moment-day": { tone: "palm", motif: "leaf", alt: "A chicken rice bowl with soft-boiled eggs at lunch", brief: "Lunch, daylight, greenery" },
   "moment-sunset": { tone: "sunset", motif: "horizon", alt: "Sunset from the rooftop", brief: "Sunset from the rooftop" },
-  "moment-evening": { tone: "night", motif: "people", alt: "Friends sharing dessert in the evening", brief: "Evening, people sharing" },
+  "moment-evening": { tone: "night", motif: "people", alt: "The garden terrace lit up after dark", brief: "Evening, people sharing" },
 
   // Location
   "location-exterior": { tone: "lagoon", motif: "horizon", alt: "The restaurant on Kaani Magu, facing the beach", brief: "Exterior from the beach side" },
 
   // Gallery extras
   "gallery-interior-colour": { tone: "snapper", motif: "table", alt: "Colourful interior seating", brief: "Interior, colourful décor" },
-  "gallery-interior-ac": { tone: "sand", motif: "table", alt: "Indoor air-conditioned tables", brief: "Indoor tables" },
+  "gallery-interior-ac": { tone: "sand", motif: "table", alt: "Indoor tables under copper pendant lamps", brief: "Indoor tables" },
   "gallery-beach-morning": { tone: "lagoon", motif: "horizon", alt: "Hulhumalé Beach in the morning", brief: "Beach, morning light" },
-  "gallery-greenery": { tone: "palm", motif: "leaf", alt: "Plants around the terrace", brief: "Greenery detail" },
+  "gallery-greenery": { tone: "palm", motif: "leaf", alt: "Plants, lights and the stairs up from the garden terrace at night", brief: "Greenery detail" },
   "gallery-guests-family": { tone: "sand", motif: "people", alt: "A family at lunch", brief: "Family table, candid" },
   "gallery-staff-bar": { tone: "espresso", motif: "people", alt: "Barista at work", brief: "Barista, candid" },
   "gallery-moment-birthday": { tone: "snapper", motif: "people", alt: "A celebration at the table", brief: "Celebration, candid" },
+  "gallery-lunch-plates": { tone: "sand", motif: "plate", alt: "Lunch for two: chicken in mushroom sauce and a plate in tomato sauce", brief: "Lunch table" },
   "gallery-sushi-detail": { tone: "night", motif: "plate", alt: "Sushi detail", brief: "Sushi macro" },
 } satisfies Record<string, Omit<PhotoSlot, "file">>;
 
