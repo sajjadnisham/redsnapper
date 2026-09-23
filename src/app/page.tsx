@@ -30,13 +30,14 @@ export default function Home() {
       <section className="on-dark relative isolate flex min-h-[100svh] items-end overflow-hidden bg-ink text-white">
         <Photo id="hero-rooftop-sunset" priority className="absolute! inset-0 -z-10 h-full w-full" imgClassName="hero-zoom object-[0%_50%] md:object-center" captionAt="tr" />
         <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-t from-ink/90 via-ink/50 to-ink/35 md:via-ink/30" />
+        <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-r from-ink/85 via-ink/55 to-ink/0 md:via-ink/50 md:to-transparent" />
         <Container className="pt-40 pb-24 md:pb-28">
           <div className="hero-in max-w-4xl">
             <p className="type-label flex items-center gap-3 text-sand">
               <span aria-hidden className="inline-block h-px w-8 bg-current" />
               Hulhumalé · Maldives
             </p>
-            <h1 className="type-hero mt-6">
+            <h1 className="type-hero mt-6 [text-shadow:0_2px_24px_rgba(26,18,14,0.55)]">
               Red Snapper
               <span className="block font-semibold text-sunset italic">&amp; Coffee Beans</span>
             </h1>
@@ -97,14 +98,14 @@ export default function Home() {
               <div
                 data-reveal="image"
                 style={{ ["--reveal-delay" as string]: "200ms" }}
-                className="absolute -bottom-10 -left-6 w-[46%] rounded-full ring-8 ring-surface sm:-left-12 lg:-left-24"
+                className="absolute -bottom-8 left-3 w-[42%] rounded-full ring-[6px] ring-surface sm:-bottom-10 sm:-left-12 sm:w-[46%] sm:ring-8 lg:-left-24"
               >
                 <Photo id="intro-coffee-by-the-sea" className="aspect-square rounded-full" caption={false} />
               </div>
             </div>
           </div>
 
-          <dl className="mt-32 grid gap-10 border-t border-ink/15 pt-12 sm:grid-cols-3">
+          <dl className="mt-24 grid sm:mt-32 gap-10 border-t border-ink/15 pt-12 sm:grid-cols-3">
             {[
               { k: "The catch", v: "Red snapper, tuna and salmon steaks, sushi and seafood platters — the ocean on the plate." },
               { k: "The cup", v: "Espresso, pour over, cold brew and slow coffee, from 7:30 in the morning until late." },

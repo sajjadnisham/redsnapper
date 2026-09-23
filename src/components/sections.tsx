@@ -294,7 +294,7 @@ export function SocialGrid() {
         </div>
         <ul className="no-scrollbar -mx-5 mt-12 flex snap-x gap-3 overflow-x-auto px-5 sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:overflow-visible sm:px-0">
           {socialTiles.filter((t) => t.kind === "type" || hasPhoto(t.photo)).map((t, i) => (
-            <li key={i} className="w-[70%] shrink-0 snap-start sm:w-auto" data-reveal style={{ ["--reveal-delay" as string]: `${(i % 3) * 90}ms` }}>
+            <li key={i} className="w-[70%] shrink-0 snap-start sm:w-auto">
               <a
                 href={social.instagram.href}
                 target="_blank"

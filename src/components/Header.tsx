@@ -28,7 +28,8 @@ export function Header() {
     if (!open) return;
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
-    panelRef.current?.querySelector<HTMLElement>("a")?.focus();
+    panelRef.current?.scrollTo(0, 0);
+    panelRef.current?.querySelector<HTMLElement>("a")?.focus({ preventScroll: true });
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         setOpen(false);
@@ -61,7 +62,7 @@ export function Header() {
     <>
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow,color,padding] duration-500 ${
-          solid ? "bg-surface/95 py-3 text-ink shadow-[0_1px_0_rgba(46,29,22,0.08)] backdrop-blur-md" : "py-5 text-white"
+          open ? "bg-coffee py-5 text-white" : solid ? "bg-surface/95 py-3 text-ink shadow-[0_1px_0_rgba(46,29,22,0.08)] backdrop-blur-md" : "py-5 text-white"
         }`}
       >
         <div className="mx-auto flex w-full max-w-[1320px] items-center justify-between gap-6 px-5 sm:px-8 lg:px-12">
@@ -127,11 +128,11 @@ export function Header() {
         className="on-dark fixed inset-0 z-40 overflow-y-auto bg-coffee text-surface xl:hidden"
       >
         <div aria-hidden className="pattern-sand absolute inset-x-0 bottom-0 h-40 opacity-80" />
-        <div className="relative mx-auto flex min-h-full max-w-xl flex-col px-6 pt-28 pb-44">
+        <div className="relative mx-auto flex min-h-full max-w-xl flex-col px-6 pt-28 pb-40">
           <nav aria-label="Mobile">
             <ul className="space-y-1">
               <li>
-                <Link href="/" className="block py-2 font-display text-4xl font-medium hover:text-sunset">
+                <Link href="/" className="block py-1.5 font-display text-[2rem] leading-tight font-medium sm:text-4xl hover:text-sunset">
                   Home
                 </Link>
               </li>
@@ -140,7 +141,7 @@ export function Header() {
                   <Link
                     href={item.href}
                     aria-current={isActive(item.href) ? "page" : undefined}
-                    className="block py-2 font-display text-4xl font-medium transition-colors hover:text-sunset aria-[current=page]:text-sunset"
+                    className="block py-1.5 font-display text-[2rem] leading-tight font-medium sm:text-4xl transition-colors hover:text-sunset aria-[current=page]:text-sunset"
                   >
                     {item.label}
                   </Link>
