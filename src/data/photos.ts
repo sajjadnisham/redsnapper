@@ -24,7 +24,7 @@ export type PhotoSlot = {
 
 const slots = {
   // Hero & story
-  "hero-rooftop-sunset": { tone: "sunset", motif: "horizon", alt: "The rooftop terrace with plants and tables, the sun over the sea", brief: "Rooftop at golden hour, sea and sky visible, calm space for headline in the lower third" },
+  "hero-rooftop-sunset": { tone: "sunset", motif: "horizon", alt: "The terrace: blue beams, a tropical leaf mural and the Red Snapper & Coffee Beans sign", brief: "Rooftop at golden hour, sea and sky visible, calm space for headline in the lower third" },
   "intro-terrace-greenery": { tone: "palm", motif: "table", alt: "The café indoors: copper lamps, palms and daylight", brief: "Ground-floor terrace with greenery and colourful décor, morning light" },
   "intro-coffee-by-the-sea": { tone: "lagoon", motif: "cup", alt: "A cappuccino on a table with the sea soft in the background", brief: "Cappuccino close-up, sea softly out of focus" },
   "story-the-catch": { tone: "snapper", motif: "fish", alt: "Red snapper plated with potatoes and broccoli", brief: "Red snapper steak, 45°, plain plate, natural light" },
